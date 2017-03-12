@@ -13,7 +13,7 @@ git submodule update --init
 ### generator 
 
 ```
-make
+./make
 ```
 
 ### dest directory
