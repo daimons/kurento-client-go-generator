@@ -1,0 +1,169 @@
+input#wsUriInput {
+  width: 50%;
+  margin: 20px 0 20px 0;
+}
+
+div#wsUriDiv {
+  padding: 0.5em 0 0 0;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+div#buttons {
+  padding: 0.5em 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 1em;
+  word-break: break-word;
+  text-align: center;
+}
+
+button {
+  background-color: #d84a38;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  margin: 0 0 1em 0;
+  padding: 0.5em 0.7em 0.6em 0.7em;
+}
+
+button:active {
+  background-color: #cf402f;
+}
+
+button:hover {
+  background-color: #cf402f;
+}
+
+button[disabled] {
+  color: #ccc;
+}
+
+button[disabled]:hover {
+  background-color: #d84a38;
+}
+
+button {
+  margin: 0 20px 0 0;
+  width: 83px;
+}
+
+button#stopButton {
+  margin: 0;
+}
+
+div#container {
+  margin: 0 auto 0 auto;
+  max-width: 40em;
+  padding: 1em 1.5em 1.3em 1.5em;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 0 0 0.8em 0;
+  padding: 0 0 0.2em 0;
+}
+
+h1 a {
+  font-weight: 300;
+  margin: 0 10px 0 0;
+  white-space: nowrap;
+}
+
+h1 span {
+  white-space: nowrap;
+}
+
+h2 {
+  color: #444;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0 0 0.8em 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+video {
+  background-image: url(https://webrtc.org/assets/images/webrtc-logo-vert-retro-255x305.png);
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  -webkit-background-size: 30% auto;
+  -moz-background-size: 30% auto;
+  -o-background-size: 30% auto;
+  background-size: 30% auto;
+  height: 225px;
+  margin: 0 0 20px 0;
+  vertical-align: top;
+  width: calc(50% - 20px);
+}
+
+video#localVideo {
+  margin: 0 20px 20px 0;
+}
+
+@media screen and (max-width: 400px) {
+  button {
+    width: 83px;
+  }
+  button {
+    margin: 0 11px 10px 0;
+  }
+  video {
+    height: 90px;
+    margin: 0 0 10px 0;
+    width: calc(50% - 7px);
+  }
+  video#localVideo {
+    margin: 0 10px 20px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  button:active {
+    background-color: darkRed;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* hack! to detect non-touch devices */
+  div#links a {
+    line-height: 0.8em;
+  }
+}

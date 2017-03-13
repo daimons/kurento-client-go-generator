@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+  <div id="container">
+
+    <h1><span>elasticRTC Loopback Application</span></h1>
+
+    <div id="wsUriDiv">
+      Enter your elasticRTC location:
+      <input type="url" id="wsUriInput" placeholder="Enter your elasticRTC websockets URL here" required>
+    </div>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+
+    <div id="buttons">
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>
+    </div>
+
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-0.2.9.js"></script>
+  <script src="https://cdn.rawgit.com/Kurento/kurento-utils-bower/master/js/kurento-utils.min.js"></script>
+  <script src="https://cdn.rawgit.com/Kurento/kurento-client-bower/master/js/kurento-client.min.js"></script>
+
+</body>
+</html>
